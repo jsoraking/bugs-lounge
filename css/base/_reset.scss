@@ -1,0 +1,135 @@
+/**
+ * Created by Sora Jeon on 2018. 09. 11.
+ * Github : http://github.com/jsoraking
+ */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+*, body {
+  font-family: 'NanumBarunGothic';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  color: $black;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:link {
+  text-decoration: none;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+button {
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+strong {
+  color: inherit;
+  font-size: inherit;
+}
+
+i {
+  font-style: normal;
+}
+
+b {
+  font-weight: normal;
+  font-size: inherit;
+}
+
+::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+::-moz-placeholder {
+  color: #aaa;
+}
+
+:-ms-input-placeholder {
+  color: #aaa;
+}
+
+:-moz-placeholder {
+  color: #aaa;
+}
+
+table {
+  border: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.blind {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+/* accessibility */
+#accessibility {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  text-align: left;
+}
+
+#accessibility a {
+  display: block;
+  position: absolute;
+  top: -1000px;
+  left: 0;
+  z-index: 500;
+  width: 100%;
+  text-align: center;
+}
+
+#accessibility a:focus, #accessibility a:active {
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  height: 40px;
+  background: #efefef;
+  font: bold 1rem $kor;
+  color: $black;
+  line-height: 40px;
+}
+
+//layout
+.inner {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}

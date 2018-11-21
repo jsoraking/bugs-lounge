@@ -1,0 +1,40 @@
+.footer {
+  margin-bottom: 78px;
+  padding-top: 36px;
+  background-color: #fff;
+
+  //footer 메뉴
+  .ft-menu {
+    overflow: hidden;
+    .ft-menu__item {
+      float: left;
+      margin-left: 15px;
+      a {
+        color: #888;
+      }
+      //이용약관
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+      //개인정보처리방침
+      &.privacy a {
+       color: #000;
+      }
+    }
+  }
+  //회사 정보
+  .company-about {
+    * {
+      color: #b2aab2;
+      font-size: .88rem;
+    }
+    margin-top: 1rem;
+  }
+  //copyright
+  .copyright {
+    margin-top: .5rem;
+    color: #b2aab2;
+    font-size: .88rem;
+
+  }
+}

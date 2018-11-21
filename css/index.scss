@@ -1,0 +1,13 @@
+//utils
+@import "utils/_var";
+
+//폰트, 초기화
+@import "base/_font";
+@import "base/_reset";
+
+//공통
+@import "layout/_header";
+@import "layout/_footer";
+
+//메인
+@import "pages/_index";

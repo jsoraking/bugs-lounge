@@ -1,0 +1,155 @@
+.container {
+  background-color: #ededed;
+  padding-bottom: 24px;
+
+  //이미지 슬라이드
+  .main-slider {
+    width: 100%;
+    height: 100%;
+    ul {
+      li {
+        width: 1200px;
+        margin: 0 auto;
+        a {
+          display: block;
+          width: 1208px;
+          height: 359px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  //이미지슬라이드 백그라운드
+  .canvas-wrap {
+    display: none;
+  }
+
+  .content {
+    background-color: #ededed;
+  }
+
+  //주요혜택
+  .main-benefit {
+    padding: 30px 0;
+    font-size: .85rem;
+    text-align: center;
+    strong {
+      margin-right: 15px;
+      font-weight: normal;
+    }
+    a {
+      margin-left: 10px;
+      &:nth-of-type(1) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  //상품
+  .goods-list {
+    ul {
+      overflow: hidden;
+      width: 100%;
+      li {
+        width: 50%;
+        max-width: 590px;
+        float: left;
+        margin-top: 24px;
+        margin-left: 20px;
+        border: 1px solid #dadada;
+
+        .goods-img {
+          position: relative;
+          width: 100%;
+          height: 279px;
+          //스티커
+          .sticker {
+            display: block;
+            span {
+              display: inline-block;
+              position: absolute;
+              top: 1rem;
+              width: 52px;
+              height: 52px;
+              padding: 1.2rem .7rem;
+              border-radius: 50%;
+              text-align: center;
+              font-size: .7rem;
+              font-family: initial;
+              font-weight: 600;
+              color: #fff;
+              letter-spacing: 1.8px;
+
+              &.new {
+                background-color: #6E85EE;
+              }
+              &.hot {
+                background-color: #FF4C42;
+              }
+              &:nth-of-type(1) {
+                left: 1rem;
+              }
+              &:nth-of-type(2) {
+                left: 4.7rem;
+              }
+            }
+          }
+        }
+        .goods-txt {
+          display: block;
+          width: 588px;
+          height: 150px;
+          background-color: #fff;
+          padding: 25px 21px;
+
+          //상품이름
+          .title {
+            display: block;
+            font-size: 1.4rem;
+            color: #3a3635;
+          }
+          //상품설명
+          .dsc {
+            display: block;
+            margin: .7rem 0 1rem;
+            font-size: 1rem;
+            color: #606060;
+          }
+          //할인율
+          .discount {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #ff4c3f;
+          }
+          //가격
+          .price {
+            color: #000;
+            font-size: 1.3rem;
+            font-weight: 600;
+          }
+          //할인 전 가격
+          .before-price {
+            color: #989898;
+            b {
+              font-size: 1rem;
+              font-weight: 600;
+              color: #989898;
+              text-decoration-line: line-through;
+            }
+          }
+        }
+
+        //첫번째 줄 상품 두개만
+        &:nth-child(1), &:nth-child(2) {
+          margin-top: 0;
+        }
+
+        //홀수
+        &:nth-child(odd) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
